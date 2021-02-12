@@ -142,8 +142,36 @@ aside{
     width: 100%;
 }
 
+.wrapper#recmdMovies{
+    color: #FFFFFF;
+}
+
+#recmdMovies h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.recmd-movies{
+    width: 100%;
+    max-width: 1020px;
+    margin: auto;
+    margin-top: 24px;
+}
+
 .recmd-movies .movie{
+    max-width: 300px;
     display: inline-block;
+    color: #FFFFFF;
+    margin: auto;
+    margin-left: -6px;
+    margin-right: 60px;
+}
+
+.recmd-movies .movie:first-child{
+    margin-left: 0px;
+}
+.recmd-movies .movie:last-child{
+    margin-right: 0px;
 }
 
 .recmd-movies .movie .poster-area{
@@ -155,4 +183,22 @@ aside{
 .recmd-movies .movie .poster-area img{
     width: 100%;
     height: auto;
+}
+
+.recmd-movies .movie .movie-body{
+    margin-top: 6px;
+    padding: 0px 6px;
+    line-height: 24px;
+}
+.recmd-movies .movie .title {
+    font-size: 24px;
+    font-weight: bold;
+    display: inline;
+}
+.recmd-movies .movie .release-date{
+    float: right;
+}
+
+.recmd-movies .movie .director{
+    clear: left;
 }
