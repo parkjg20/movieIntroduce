@@ -123,6 +123,48 @@ aside{
     margin: auto;
 }
 
+#movieInfo h1 {
+    color: white;
+    font-size: 40px;
+    margin-top: 30px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+#movieInfo div {
+    color: white;
+}
+
+.movie-info .info-area {
+    float: left;
+    width: 70%;
+    display: inline-block;
+    margin: 8px;
+}
+
+.movie-info .poster {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.movie-info .release-date{
+    float: right;
+    margin-right: 10px;
+}
+
+.movie-info .info {
+    border-left: 3px solid rgba(255, 255, 255, 0.9);
+    padding-left: 5px;
+    margin-bottom: 3px;
+}
+
+.movie-info .summary {
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 1.25;
+}
+
 #carousel h1{
     color: white;
     font-size: 40px;
@@ -147,8 +189,11 @@ aside{
 }
 
 #recmdMovies h1{
-    font-size: 30px;
+    color: white;
+    font-size: 40px;
+    margin-top: 30px;
     font-weight: bold;
+    font-style: italic;
 }
 
 .recmd-movies{
