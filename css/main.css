@@ -131,10 +131,10 @@ aside{
     margin-left: 8px;
     width: 15px;
     height: 150px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.4);
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    transition: width 1.3s;
+    transition: width 0.7s;
 }
 
 #edge .box:hover {
@@ -152,7 +152,7 @@ aside{
     height: 130px;
     margin-top: 10px;
     margin-left: 10px;
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 #edge .box:hover img {
