@@ -4,42 +4,44 @@
     <meta charset="UTF-8">
     <title>Movie Introduce</title>
     
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/main.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/movie.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
+    <div class="wrapper" id="edge">
+        <!-- 지희 작업 - edge screen -->
+        <div class="box">
+                <div class="1"><img src="img/martion.jpg" alt="1"></div>
+                <div class="2"><img src="img/martion.jpg" alt="2"></div>
+                <div class="3"><img src="img/martion.jpg" alt="3"></div>
+        </div>
+    </div>
     <div class="container">
       
-        <div class="wrapper" id="edge">
-            <!-- 지희 작업 - edge screen -->
-            <div class="box">
-                    <div class="1"><img src="img/martion.jpg" alt="1"></div>
-                    <div class="2"><img src="img/martion.jpg" alt="2"></div>
-                    <div class="3"><img src="img/martion.jpg" alt="3"></div>
-            </div>
-        </div>
-       
         <div class="wrapper" id="movieInfo">
             <!-- 지희 작업 - 영화 소개 -->
-            <h1>마션 (The Martian)</h1>
             <div class="movie-info">
-                    <div class="info-area">
+                <div class="info-area">
+                    <div>
+                        <h1>마션 (The Martian)</h1>
                         <span class="release-date">2015-10-08</span>
-                        <div class="info">감독: 리들리 스콧</div>
-                        <div class="info">장르: 모험, 드라마, SF</div>
-                        <div class="info">러닝타임: 144분</div>
-                        <div class="info">배급: 이십세기폭스코리아㈜</div>
-                        <div class="summary">
-                            NASA 아레스3탐사대는 화성을 탐사하던 중 모래폭풍을 만나고 팀원 마크 와트니가 사망했다고 판단, 그를 남기고 떠난다. 극적으로 생존한 마크 와트니는 남은 식량과 기발한 재치로 화성에서 살아남을 방법을 찾으며 자신이 살아있음을 알리려 노력한다. 마침내, 자신이 살아있다는 사실을 지구에 알리게 된 마크 와트니 NASA는 총력을 기울여 마크 와트니를 구출하기 위해 노력하고, 아레스 3 탐사대 또한 그를 구출하기 위해 그들만의 방법을 찾게 되는데…… 전세계가 바라는 마크 와트니의 지구 귀환! 그는 과연 살아 돌아올 수 있을 것인가?
-                        </div>
                     </div>
-                    <div class="poster"><img src="./img/martion.jpg" alt="포스터"></div>
+                    <div class="info">감독: 리들리 스콧</div>
+                    <div class="info">장르: 모험, 드라마, SF</div>
+                    <div class="info">러닝타임: 144분</div>
+                    <div class="info">배급: 이십세기폭스코리아㈜</div>
+                    <div class="summary">
+                        NASA 아레스3탐사대는 화성을 탐사하던 중 모래폭풍을 만나고 팀원 마크 와트니가 사망했다고 판단, 그를 남기고 떠난다. 극적으로 생존한 마크 와트니는 남은 식량과 기발한 재치로 화성에서 살아남을 방법을 찾으며 자신이 살아있음을 알리려 노력한다. 마침내, 자신이 살아있다는 사실을 지구에 알리게 된 마크 와트니 NASA는 총력을 기울여 마크 와트니를 구출하기 위해 노력하고, 아레스 3 탐사대 또한 그를 구출하기 위해 그들만의 방법을 찾게 되는데…… 전세계가 바라는 마크 와트니의 지구 귀환! 그는 과연 살아 돌아올 수 있을 것인가?
+                    </div>
+                </div>
             </div>
+            <div class="poster"><img src="./img/martion.jpg" alt="포스터"></div>
         </div>
 
         <div class="wrapper" id="carousel">
@@ -68,7 +70,7 @@
             <!-- 진국 작업 - 추천 영화 -->
             <h1>추천 영화</h1>
             <div class="recmd-movies">
-                <div class="movie">
+                <a href="" class="movie">
                     <div class="poster-area">
                         <img src="img/martion.jpg">
                     </div>
@@ -78,8 +80,8 @@
                         <br>
                         <span class="director">감독: 리들리 스콧</span>
                     </div>
-                </div>
-                <div class="movie">
+                </a>
+                <a href="" class="movie">
                     <div class="poster-area">
                         <img src="img/martion.jpg">
                     </div>
@@ -89,8 +91,8 @@
                         <br>
                         <span class="director">감독: 리들리 스콧</span>
                     </div>
-                </div>
-                <div class="movie">
+                </a>
+                <a href="" class="movie">
                     <div class="poster-area">
                         <img src="img/martion.jpg">
                     </div>
@@ -100,10 +102,27 @@
                         <br>
                         <span class="director">감독: 리들리 스콧</span>
                     </div>
-                </div>
+                </a>
+                <a href="" class="movie">
+                    <div class="poster-area">
+                        <img src="img/martion.jpg">
+                    </div>
+                    <div class="movie-body">
+                        <h3 class="title">마션</h3>
+                        <span class="release-date">2015-10-08</span>
+                        <br>
+                        <span class="director">감독: 리들리 스콧</span>
+                    </div>
+                </a>
             </div>
         </div>
         
+    </div>
+    <div class="footer">
+        <div class="footer-content">
+            Copyright. All rights reserved<br>
+            박진국, 엄지희, 조무한 + 유승완
+        </div>
     </div>
 </body>
 </html>
