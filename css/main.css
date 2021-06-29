@@ -213,6 +213,10 @@ aside{
     line-height: 1.25;
 }
 
+.movie-info .summary #summary_main_font-style {
+    font-weight: bold;
+}
+
 .movie-info .hashtag {
     margin-top: 15px;
     font-size: 18px;
