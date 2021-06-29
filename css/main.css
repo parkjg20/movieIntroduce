@@ -37,25 +37,27 @@ body {
     background-color: black;
 }
 
-.container{
+.container {
     height: 100%;
 }
-aside{
+
+aside {
     z-index: 9999;
 }
-.laside{
+
+.laside {
     position: absolute;
     top: 0px;
     left: 0px;
 }
 
-.raside{
+.raside {
     position: absolute;
     top: 0px;
     right: 0px;
 }
 
-.section{
+.section {
     width: 100%;
 }
 
@@ -70,7 +72,9 @@ aside{
     cursor: default;
 }
 
-.slide{
+/* main.html */
+
+.slide {
     width: 1050px;
     height: 400px;
     clear: both;
@@ -84,7 +88,7 @@ aside{
     transition: all 2s;
 
 }
-.slide .slide-item{
+.slide .slide-item {
     display: inline-block;
     opacity: 50%;
     margin-left: 20px;
@@ -92,12 +96,12 @@ aside{
     cursor: default;
 }
 
-.slide-item.active{
+.slide-item.active {
     opacity: 100%;
     cursor: pointer;
 }
 
-.buttons{
+.buttons {
     width: 100%;
     height: 15px;
     margin: auto;
@@ -105,8 +109,9 @@ aside{
     text-align: center;
 }
 
-.buttons .button{
+.buttons .button {
     display: inline-block;
+    border-radius: 40%;
     width: 15px;
     height: 15px;
     background-color : #FAFAFA;
@@ -115,19 +120,23 @@ aside{
     cursor: pointer;
 }
 
-.button.active{
+.button.active {
     background-color: white;
     opacity: 100%;
 }
 
-.wrapper{
+/* martion.html, maninthedark.html, whiplash.html */
+
+.wrapper {
     width: 100%;
     max-width: 1180px;
     margin: auto;
 }
-#edge.wrapper{
+
+#edge.wrapper {
     margin: 0;
 }
+
 #edge .box {
     overflow: hidden;
     position: fixed;
@@ -196,7 +205,7 @@ aside{
     margin-left: 20px;
 }
 
-.movie-info .release-date{
+.movie-info .release-date {
     float: right;
     margin-right: 10px;
     transform: translateY(132%);
@@ -254,7 +263,7 @@ aside{
     background-color: #6b261e;
 }
 
-.movie-info .movie-button button{
+.movie-info .movie-button button {
     display: inline-block;
     font-size: 18px;
     width: 100%;
@@ -271,30 +280,31 @@ aside{
     font-weight: 800;
 }
 
-#carousel h1{
+#carousel h1 {
     color: white;
     font-size: 40px;
     margin-top: 30px;
     font-weight: bold;
     font-style: italic;
 }
-.carousel-wrapper{
+
+.carousel-wrapper {
     width: 100%;
 }
 
-.carousel-wrapper div{
+.carousel-wrapper div {
     margin: 8px;
 }
 
-.carousel-wrapper div img{
+.carousel-wrapper div img {
     width: 100%;
 }
 
-.wrapper#recmdMovies{
+.wrapper#recmdMovies {
     color: #FFFFFF;
 }
 
-#recmdMovies h1{
+#recmdMovies h1 {
     color: white;
     font-size: 40px;
     margin-top: 30px;
@@ -302,13 +312,13 @@ aside{
     font-style: italic;
 }
 
-.recmd-movies{
+.recmd-movies {
     width: 100%;
     margin: auto;
     margin-top: 24px;
 }
 
-.recmd-movies .movie{
+.recmd-movies .movie {
     width: 266px;
     display: inline-block;
     color: #FFFFFF;
@@ -317,37 +327,41 @@ aside{
     margin-right: 39px;
 }
 
-.recmd-movies .movie:first-child{
+.recmd-movies .movie:first-child {
     margin-left: 0px;
 }
-.recmd-movies .movie:last-child{
+
+.recmd-movies .movie:last-child {
     margin-right: 0px;
 }
 
-.recmd-movies .movie .poster-area{
+.recmd-movies .movie .poster-area {
     width: 100%;
     height: 100%;
 }
-.recmd-movies .movie .poster-area img{
+
+.recmd-movies .movie .poster-area img {
     width: 100%;
     height: auto;
 }
 
-.recmd-movies .movie .movie-body{
+.recmd-movies .movie .movie-body {
     margin-top: 6px;
     padding: 0px 6px;
     line-height: 24px;
 }
+
 .recmd-movies .movie .title {
     font-size: 24px;
     font-weight: bold;
     display: inline;
 }
-.recmd-movies .movie .release-date{
+
+.recmd-movies .movie .release-date {
     float: right;
 }
 
-.recmd-movies .movie .director{
+.recmd-movies .movie .director {
     clear: left;
 }
 
@@ -356,16 +370,16 @@ a * {
     text-decoration: none;
 }
 
-.container .wrapper{
+.container .wrapper {
     margin-top: 100px;
 }
 
-.container .wrapper:last-child{
+.container .wrapper:last-child {
     margin-bottom: 100px;
 }
 
 .slick-prev img, 
-.slick-next img{
+.slick-next img {
     width: 30px;
 }
 
@@ -377,7 +391,7 @@ a * {
     width: 100%;
 }
 
-.footer-content{
+.footer-content {
     width: 100%;
     max-width: 1180px;
     margin: auto;
@@ -387,4 +401,64 @@ a * {
     padding-bottom: 60px;
     color: #FFFFFF;
     line-height: 24px;
+}
+
+/* 노트북-L에 사용될 스타일 시트 */
+@media screen and (max-width: 1048px) {
+
+    /* main.html */
+    .content { height: 500px; }
+    .slide { margin-left: -1%; }
+    .buttons .button {
+        width: 24px;
+        height: 24px;
+        margin: 2px;
+        margin-top: 25px;
+        cursor: pointer;
+    }
+}
+
+/* 노트북에 사용될 스타일 시트 */
+@media screen and (max-width: 1014px) {
+
+    /* main.html */
+    .content { height: 500px; }
+    .slide { margin-left: -2.5%; }
+    .buttons .button {
+        width: 30px;
+        height: 30px;
+        margin: 2.5px;
+        margin-top: 22.5px;
+        cursor: pointer;
+    }
+}
+
+/* 모바일에 사용될 스타일 시트 */
+@media screen and (max-width: 980px) and (min-width: 769px) {
+    
+    /* main.html */
+    .content { height: 500px; }
+    .slide { margin-left: -38px; }
+    .buttons .button {
+        width: 36px;
+        height: 36px;
+        margin: 3px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+}
+
+/* 모바일에 사용될 스타일 시트 */
+@media screen and (max-width: 768px) {
+    
+    /* main.html */
+    /*
+    .content { height: 700px; }
+    .slide { margin-left: -38px; }
+    .buttons .button {
+        width: 36px;
+        height: 36px;
+        margin: 3px;
+        cursor: pointer;
+    }*/
 }
