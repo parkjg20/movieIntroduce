@@ -165,6 +165,7 @@ aside{
 
 #edge .box img:hover {
     opacity: 1;
+    cursor: pointer;
 }
 
 #movieInfo h1 {
