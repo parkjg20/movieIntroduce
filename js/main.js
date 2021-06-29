@@ -14,12 +14,14 @@ $(function () {
     
         $(".slide-item.active").click(function () {
             var _name = $(this).find("input[name=movieName]").val();
-    
-            location.href=  _name + ".html" ;
+            location.href = _name + ".html";
         })
     })
 
-
+    $(".slide-item.active").click(function () {
+        var _name = $(this).find("input[name=movieName]").val();
+        location.href = _name + ".html";
+    })
 })
 
 function getCurrentTab() {
