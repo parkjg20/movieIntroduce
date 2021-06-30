@@ -23,7 +23,20 @@ $(function () {
     })
 
     // 데스크탑에 사용될 JS
-    var dql = window.matchMedia("screen and (min-width: 1049px");
+    var dql = window.matchMedia("screen and (min-width: 1145px");
+    if (dql.matches) {
+        $("#lctn").attr("src","img/curtain-left.png");
+        $("#rctn").attr("src","img/curtain-right.png");
+    }
+    dql.addListener(function(e) {
+        if(e.matches) {
+            $("#lctn").attr("src","img/curtain-left.png");
+            $("#rctn").attr("src","img/curtain-right.png");
+        }
+    })
+
+    // 노트북-L에 사용될 JS
+    var dql = window.matchMedia("screen and (max-width: 1144px");
     if (dql.matches) {
         $("#lctn").attr("src","img/curtain-left.png");
         $("#rctn").attr("src","img/curtain-right.png");

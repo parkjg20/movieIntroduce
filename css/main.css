@@ -403,62 +403,144 @@ a * {
     line-height: 24px;
 }
 
-/* 노트북-L에 사용될 스타일 시트 */
-@media screen and (max-width: 1048px) {
-
-    /* main.html */
-    .content { height: 500px; }
-    .slide { margin-left: -1%; }
-    .buttons .button {
-        width: 24px;
-        height: 24px;
-        margin: 2px;
-        margin-top: 25px;
-        cursor: pointer;
-    }
-}
-
-/* 노트북에 사용될 스타일 시트 */
-@media screen and (max-width: 1014px) {
-
-    /* main.html */
-    .content { height: 500px; }
-    .slide { margin-left: -2.5%; }
-    .buttons .button {
-        width: 30px;
-        height: 30px;
-        margin: 2.5px;
-        margin-top: 22.5px;
-        cursor: pointer;
-    }
-}
-
 /* 모바일에 사용될 스타일 시트 */
-@media screen and (max-width: 980px) and (min-width: 769px) {
+@media screen and (max-width: 1180px) {
     
-    /* main.html */
-    .content { height: 500px; }
-    .slide { margin-left: -38px; }
-    .buttons .button {
-        width: 36px;
-        height: 36px;
-        margin: 3px;
-        margin-top: 20px;
+    /* edge-box */
+    .wrapper { max-width: 850px; }
+    #edge .box {
+        transform: translateY(300px);
+        margin-left: 8px;
+        width: 2.5em;
+        height: 24em;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        transition: width 0.7s;
+    }
+    #edge .box:hover {
+        width: 80%;
+        height: 24em;
+    }
+    #edge .box div {
+        display: inline-block;
+        margin: 0;
+    }
+    #edge .box img {
+        display: none;
+        width: 15.3em;
+        height: 22.1em;
+        /* 9:13 */
+        margin-top: 10px;
+        margin-left: 10px;
+        opacity: 0.4;
+    }
+    #edge .box:hover img {
+        display: inline-block;
+    }
+    #edge .box img:hover {
+        opacity: 1;
         cursor: pointer;
     }
-}
+    #edge .box img:active { opacity: 1; }
 
-/* 모바일에 사용될 스타일 시트 */
-@media screen and (max-width: 768px) {
+    /* movie-info */
+    #movieInfo h1 {
+        font-size: 5.7em;
+        margin-bottom: 0.5em;
+        width: 100%;
+    }
+    #movieInfo .release-date {
+        font-size: 1.5em;
+    }
+    #movieInfo div { color: white; }
+    .movie-info .info-area {
+        float: left;
+        width: 100%;
+    }
+    .movie-info .release-date { font-size: 18px; }
+    .movie-info .info { font-size: 20px; }
+    .movie-info .summary {
+        margin-top: 18px;
+        font-size: 1.5em;
+        line-height: 1.3;
+    }
+    .movie-info .hashtag {
+        margin-top: 18px;
+        font-size: 1.5em;
+        line-height: 1.3;
+    }
     
-    /* main.html */
-    /*
-    .content { height: 700px; }
-    .slide { margin-left: -38px; }
-    .buttons .button {
-        width: 36px;
-        height: 36px;
-        margin: 3px;
-        cursor: pointer;
-    }*/
+    /* movie-info button */
+    .button-box { width: 100%; }
+    #movie-button1 {
+        width: 100%;
+        height: 6.5em;
+    }
+    #movie-button2 {
+        width: 100%;
+        height: 6.5em;
+    }
+    .movie-info .button-box { margin-top: 18px; }
+    .movie-info .movie-button button { font-size: 2.5em; }
+    .movie-info .movie-button button:hover {font-size: 2.6em; }
+    
+    /* poster */
+    .poster-img {
+        width: 500px;
+        text-align: center;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 50px;
+        padding: 10px;
+        border: 4px double white;
+    }
+
+    /* carousel */
+    #carousel h1 { font-size: 4em; }
+    .carousel-wrapper div img {
+        width: 100%;
+        height: 170px;
+    }
+    
+    /* recmd-movies */
+    #recmdMovies h1 { font-size: 4em; }    
+    .recmd-movies .movie {
+        width: 45%;
+        margin: auto;
+        margin-right: 35px;
+    }
+    .recmd-movies .movie .movie-body {
+        margin-top: 16px;
+        margin-bottom: 40px;
+        padding: 0px 6px;
+        line-height: 1.35;
+    }    
+    .recmd-movies .movie .title {
+        font-size: 2.5em;
+    }
+    .recmd-movies .movie .release-date {
+        font-size: 1.5em;
+        float: right;
+    }
+    .recmd-movies .movie .director {
+        font-size:1.5em;
+        clear: left;
+    }
+    
+    /* footer */
+    .footer{
+        width: 100%;
+    }    
+    .footer-content {
+        width: 100%;
+        max-width: 80%;
+        margin: auto;
+        border-top: 1px solid #FFFFFF;
+        
+        padding-top: 40px;
+        padding-bottom: 60px;
+        color: #FFFFFF;
+        font-size: 1.8em;
+        line-height: 1.35;
+    }
 }
